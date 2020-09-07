@@ -1,0 +1,58 @@
+/**
+ * @info
+ * Here, we outline utility classes that relate
+ * to the primary content area, the header and the
+ * footer. Here, we offset .main by a certain amount
+ * of pixels to account for a sticky header. We also
+ * provide some min-heights for the content area.
+ *
+ * These should be modified specifically for the project.
+ * If you feel like they are not relevant, delete them.
+ */
+
+ .no-scroll {
+  overflow: hidden;
+}
+
+.wrapper {
+  transition: transform 0.3s;
+
+  .has-offset-main & {
+    transform: translate3d(100%, 0, 0);
+
+    @media #{$mq-xs} {
+      transform: none;
+    }
+  }
+}
+
+.wrapper--max-width,
+%wrapper--max-width {
+  max-width: $l;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.main {
+  background-color: $c-romance;
+  min-height: calc(100vh - 65px);
+  padding-bottom: 1px;
+  padding-top: 65px;
+}
+
+.include-account-nav {
+  .main {
+    padding-top: 135px;
+  }
+}
+
+.header,
+.footer {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.recharge.page__customers__request-invite {
+  padding-top: 80px;
+}

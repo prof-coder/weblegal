@@ -1,0 +1,235 @@
+.okeReviews {
+  p {
+    font-family: 'Centra No2', arial, sans-serif!important;
+    font-size: 14px!important;
+    font-weight: normal!important;
+    letter-spacing: 0.4px!important;
+    line-height: 24px!important;
+
+    @media #{$mq-m} {
+      font-size: 16px!important;
+      line-height: 28px!important;
+    }
+  }
+
+  .okeReviews-starRating-indicator-layer--foreground {
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3Csvg%20width%3D%2280%22%20height%3D%2214%22%20viewBox%3D%220%200%2080%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22%23FF8EDD%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M71.996%2011.368l-3.94%202.42c-.474.292-.756.096-.628-.443l1.074-4.53-3.507-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.78%204.3%204.602.37c.552.046.666.37.237.74l-3.507%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM55.996%2011.368l-3.94%202.42c-.474.292-.756.096-.628-.443l1.074-4.53-3.507-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.78%204.3%204.602.37c.552.046.666.37.237.74l-3.507%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM40.123%2011.368l-3.94%202.42c-.475.292-.756.096-.63-.443l1.076-4.53-3.508-3.022c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.778%204.3%204.603.37c.554.046.667.37.24.74l-3.508%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422zM24.076%2011.368l-3.94%202.42c-.475.292-.757.096-.63-.443l1.076-4.53-3.507-3.022c-.422-.363-.324-.693.238-.74l4.603-.37%201.78-4.3c.21-.51.55-.512.76%200l1.78%204.3%204.602.37c.554.046.667.37.24.74l-3.508%203.02%201.074%204.532c.127.536-.146.74-.628.444l-3.94-2.422zM8.123%2011.368l-3.94%202.42c-.475.292-.756.096-.63-.443l1.076-4.53L1.12%205.792c-.422-.363-.324-.693.24-.74l4.602-.37%201.778-4.3c.21-.51.55-.512.762%200l1.778%204.3%204.603.37c.554.046.667.37.24.74l-3.508%203.02%201.075%204.532c.127.536-.147.74-.628.444l-3.94-2.422z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important;
+  }
+
+  .okeReviews-reviewsWidget {
+    display: flex!important;
+    flex-direction: column!important;
+  }
+
+  .okeReviews-reviewsWidget-header {
+    margin: 0 auto 72px auto !important;
+    max-width: 1176px !important;
+    order: 1!important;
+    width: calc(100% - 80px) !important;
+  }
+
+  .okeReviews-reviewsWidget-header-poweredBy {
+    display: block!important;
+  }
+
+  .okeReviews-reviewsWidget-header-controls {
+    display: block!important;
+    text-align: center!important;
+  }
+
+  .okeReviews-reviewsAggregate {
+    margin: auto!important;
+    order: 0!important;
+  }
+
+  .okeReviews-reviewsAggregate-primary {
+    display: none!important;
+  }
+
+  .okeReviews-reviewsAggregate-side {
+    border: 0!important;
+    padding: 0!important;
+    margin-bottom: 39px!important;
+  }
+
+  .okeReviews-reviewsAggregate-ratingDistribution {
+    display: none!important;
+  }
+
+  .okeReviews-reviewsAggregate-summary-rating {
+    margin-bottom: 11px!important;
+    text-align: center!important;
+  }
+
+  .okeReviews-reviewsAggregate-summary-rating-value {
+    display: block!important;
+    margin-bottom: 7px!important;
+  }
+
+  .okeReviews-badge--rating {
+    background-color: transparent!important;
+    color: $c-blue!important;
+    font-family: 'Centra No2', arial, sans-serif!important;
+    font-weight: normal!important;
+    font-size: 36px!important;
+    line-height: 44px!important;
+  }
+
+  .okeReviews-reviewsAggregate-summary-total {
+    color: $c-blue!important;
+    font-family: 'Centra No2', arial, sans-serif!important;
+    font-weight: bold!important;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center!important;
+    text-transform: uppercase!important;
+  }
+
+  .okeReviews-button {
+    background-color: $c-blue!important;
+    border: solid 2px $c-blue!important;
+    border-radius: 28px!important;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1)!important;
+    color: $c-white!important;
+    display: inline-block!important;
+    font-family: 'Centra No2', arial, sans-serif!important;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    height: 50px!important;
+    letter-spacing: 1px!important;
+    line-height: 48px!important;
+    min-width: 130px!important;
+    padding: 0 20px!important;
+    text-align: center!important;
+    text-transform: uppercase!important;
+    transition: $speed all!important;
+
+    &:hover {
+      background-color: transparent!important;
+      color: $c-blue!important;
+    }
+  }
+
+  .okeReviews-reviewsWidget-reviews {
+    order: 2!important;
+  }
+
+  .okeReviews-reviews-controls {
+    border-bottom: 1px solid rgba(1, 39, 70, 0.1);
+    border-top: 1px solid rgba(1, 39, 70, 0.1);
+    padding: 12px 40px!important;
+    text-align: center!important;
+
+    @media #{$mq-m} {
+      text-align: right!important;
+    }
+  }
+
+  .okeReviews-select {
+    border: 1px solid $c-blue;
+    border-radius: 8px!important;
+    padding: 8px 18px!important;
+    width: 228px!important;
+  }
+
+  .okeReviews-select::before {
+    display: none!important;
+  }
+
+  .okeReviews-select::after {
+    border-left: 1px solid $c-blue!important;
+    border-right: 0!important;
+    border-top: 1px solid $c-blue!important;
+    height: 8px!important;
+    right: 14px!important;
+    top: 50%!important;
+    transform: translateY(-5px) rotate(225deg)!important;
+    width: 8px!important;
+  }
+
+  .okeReviews-select-input {
+    color: $c-blue!important;
+    font-family: 'Centra No2', arial, sans-serif!important;
+    font-weight: normal!important;
+    font-size: 10px!important;
+    line-height: 12px!important;
+    letter-spacing: 0.25px!important;
+    padding: 0!important;
+  }
+
+  .okeReviews-review {
+    margin: auto!important;
+    max-width: $md!important;
+    padding: 0!important;
+    width: calc(100% - 80px)!important;
+  }
+
+  .okeReviews-reviews-controls-reviewCount {
+    display: none!important;
+  }
+
+  .okeReviews-reviews-review {
+    border-bottom: solid 1px rgba(1, 39, 70, 0.1)!important;
+    margin-bottom: 0!important;
+  }
+
+  .okeReviews-review-reviewer-profile-avatar {
+    display: none!important;
+  }
+
+  .okeReviews-review-reviewer-profile-details {
+    padding-left: 0!important;
+  }
+
+  .okeReviews-review-date {
+    color: $c-blue;
+    font-family: 'Centra No2', arial, sans-serif!important;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.68;
+  }
+
+  .okeReviews-review-side {
+    border: 0!important;
+    padding: 30px 0!important;
+  }
+
+  .okeReviews-review-primary {
+    border: 0!important;
+    padding: 0 0 20px!important;
+
+    @media (min-width: 640px) {
+      padding: 30px 0!important;
+    }
+  }
+
+  .okeReviews-review-reviewer-profile {
+    border-bottom: 0!important;
+  }
+
+  .okeReviews-avatar-image {
+    display: none!important;
+  }
+
+  .okeReviews-review-main-heading {
+    color: $c-blue!important;
+    font-family: 'Centra No2', arial, sans-serif!important;
+    font-weight: normal!important;
+    font-size: 20px!important;
+    font-weight: 100!important;
+    line-height: 28px!important;
+
+    @media #{$mq-m} {
+      font-size: 28px!important;
+      line-height: 36px!important;
+    }
+  }
+
+  .okeReviews-helpful-question {
+    display: none!important;
+  }
+
+  .okeReviews-review-helpful-vote-button {
+    color: $c-blue!important;
+  }
+}

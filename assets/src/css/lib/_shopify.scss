@@ -1,0 +1,15 @@
+/**
+ * @info
+ * We have this stylesheet to primarily
+ * hide the preview bar when we need to.
+ * Only Shopify UI component style overrides
+ * should really go here.
+ */
+#preview-bar-iframe {
+  height: 60px;
+  // display: none !important;
+}
+
+html {
+  padding: 0 !important;
+}

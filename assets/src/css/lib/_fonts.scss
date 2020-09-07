@@ -1,0 +1,50 @@
+/**
+ * @info
+ * Here, we outline all @font-face declarations
+ * for the entire project.
+ *
+ * The font faces included here are for example only.
+ * They should be replaced with the real font faces.
+ *
+ * Note: When you run "npm start", the css and javascript
+ * are compiled locally and served to the browser without
+ * being uploaded to Shopify's servers. We do this because
+ * it dramatically speeds up the time between when the file
+ * is saved and when the change appears in the browser. However,
+ * in order to make this possible, we have a Webpack loader that
+ * replaces the "asset_url" filter with the value of "path.cdn"
+ * in the kit.config.js file. So, it is important to ensure that
+ * this property in kit.config.js is the correct value.
+ * When the theme is build and deployed, the Liquid filter
+ * is interpreted by Shopify normally.
+ *
+ * Example of "path.cdn":
+ * https://cdn.shopify.com/s/files/1/0234/4347/2480/t/25/assets/
+ */
+@font-face {
+  font-family: 'Centra No2';
+  src: url('{{ "centrano2-book-webfont.woff2" | asset_url }}') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Centra No2';
+  src: url('{{ "centrano2-bookitalic-webfont.woff2" | asset_url }}') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Centra No2';
+  src: url('{{ "centrano2-medium-webfont.woff2" | asset_url }}') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Centra No2';
+  src: url('{{ "centrano2-bold-webfont.woff2" | asset_url }}') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}

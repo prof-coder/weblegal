@@ -1,0 +1,116 @@
+/**
+ * @info
+ * Here, we have a very simple outline of
+ * form related utility classes. Add to this
+ * file as you create opinions on how forms
+ * should be styled for the project.
+ */
+
+.form-row {
+  position: relative;
+  margin-bottom: 20px;
+  &.double {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      width: calc( 50% - 10px );
+    }
+  }
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $c-white inset !important;
+}
+
+.custom-klaviyo-form {
+  /* NB injected Klaviyo markup doesn't provide us with targetable classes */
+  form {
+    padding: 0 !important;
+  }
+
+  form > div > div > div {
+    padding: 0 !important;
+  }
+
+  // Phone number field
+  form > div > div:nth-child(3) > div:nth-child(2) {
+    display: block !important;
+  }
+
+  form > div > div:nth-child(3) > div:nth-child(2) > div {
+    height: 50px !important;
+  }
+
+  form > div > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) {
+    border: solid 1px $c-blue !important;
+  }
+
+  /* NB use of !important to override hyper-specific Klaviyo styles */
+  input[type="email"],
+  input[type="text"] {
+    border: 1px solid $c-blue !important;
+    border-radius: 8px !important;
+    color: $c-blue !important;
+    font-family: 'Centra No2', arial, sans-serif !important;
+    font-size: 10px !important;
+    height: 50px !important;
+    letter-spacing: 0.25px !important;
+    line-height: 12px !important;
+    margin-bottom: 22px !important;
+
+    &::placeholder {
+      font-family: 'Centra No2', arial, sans-serif !important;
+      font-size: 10px !important;
+      font-weight: normal !important;
+      line-height: 12px !important;
+      color: $c-blue !important;
+      opacity: 1 !important;
+    }
+  }
+
+  button {
+    background-color: $c-blue !important;
+    border-radius: 28px !important;
+    display: inline-block !important;
+    font-family: 'Centra No2', arial, sans-serif !important;
+    font-weight: bold !important;
+    height: 50px !important;
+    letter-spacing: 1px !important;
+    line-height: 48px !important;
+    min-width: 130px !important;
+    padding: 0 20px !important;
+    text-align: center !important;
+
+    &::after {
+      display: none !important;
+    }
+  }
+
+  p {
+    text-align: left !important;
+  }
+
+  strong,
+  span:not([role='alert']) {
+    color: $c-bridal-heath !important;
+    font-family: 'Centra No2', arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    line-height: 1.2 !important;
+  }
+
+  strong {
+    display: block !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+  }
+}

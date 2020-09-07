@@ -1,0 +1,262 @@
+/**
+ * @info
+ * Here, we outline an array of helper utility
+ * classes that solve needs that relate to a variety
+ * of concerns. Add to this as the
+ * project evolves.
+ */
+
+/**
+ * Easily allows for a DOM element
+ * to comply to a distinct aspect ratio.
+ *
+ * Example:
+ * <div class="ratio square"></div>
+ */
+.ratio {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+  }
+}
+
+.square::before {
+  padding-top: 100%;
+}
+
+.rectangle {
+  padding-bottom: calc(575/765 * 100%);
+}
+
+/**
+ * A simple way to hide an element
+ */
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+/**
+ * This relates directly to Vue.js. As
+ * per standard Vue.js functionality, the
+ * v-cloak attribute is removed from the DOM
+ * element when the Vue component is initialized.
+ * So, this attribute can be added to ensure that
+ * the Vue.js component is not shown to the user
+ * until it is ready.
+ */
+[v-cloak] {
+  display: none;
+}
+
+/**
+ * Visually hidden but read by screen readers
+ */
+.sr-only {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 0;
+}
+
+/**
+ * Simple helpers for handling SVG-based
+ * icons.
+ *
+ * Example:
+ * <div class="icon">
+ *  {%- include 'icon' with 'icon-bag' -%}
+ *  <span class="sr-only">Shopping bag icon</span>
+ * </div>
+ */
+.icon,
+.logo {
+  position: relative;
+
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/**
+ * Easily makes a DOM element fill the entire
+ * width and height of it's relative parent.
+ */
+.fill {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/**
+*  Responsive Helpers
+*/
+
+.visible-block,
+.visible-inline,
+.visible-inline-block,
+.visible-xxs-block,
+.visible-xxs-inline,
+.visible-xxs-inline-block,
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-s-block,
+.visible-s-inline,
+.visible-s-inline-block,
+.visible-m-block,
+.visible-m-inline,
+.visible-m-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-l-block,
+.visible-l-inline,
+.visible-l-inline-block {
+  display: none !important;
+}
+
+@media (max-width: $xxs) {
+  .visible-block {
+    display: block !important;
+  }
+
+  .visible-inline {
+    display: inline !important;
+  }
+
+  .visible-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $xxs + 1) and (max-width: $xs) {
+  .hidden-xxs {
+    display: none !important;
+  }
+
+  .visible-xxs-block {
+    display: block !important;
+  }
+
+  .visible-xxs-inline {
+    display: inline !important;
+  }
+
+  .visible-xxs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $xs + 1) and (max-width: $s) {
+  .hidden-xs {
+    display: none !important;
+  }
+
+  .visible-xs-block {
+    display: block !important;
+  }
+
+  .visible-xs-inline {
+    display: inline !important;
+  }
+
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $s + 1) and (max-width: $m) {
+  .hidden-s {
+    display: none !important;
+  }
+
+  .visible-s-block {
+    display: block !important;
+  }
+
+  .visible-s-inline {
+    display: inline !important;
+  }
+
+  .visible-s-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $m + 1) and (max-width: $md) {
+  .hidden-m {
+    display: none !important;
+  }
+
+  .visible-m-block {
+    display: block !important;
+  }
+
+  .visible-m-inline {
+    display: inline !important;
+  }
+
+  .visible-m-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $md + 1) and (max-width: $l) {
+  .hidden-md {
+    display: none !important;
+  }
+
+  .visible-md-block {
+    display: block !important;
+  }
+
+  .visible-md-inline {
+    display: inline !important;
+  }
+
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $l + 1) {
+  .hidden-l {
+    display: none !important;
+  }
+
+  .visible-l-block {
+    display: block !important;
+  }
+
+  .visible-l-inline {
+    display: inline !important;
+  }
+
+  .visible-l-inline-block {
+    display: inline-block !important;
+  }
+}
+
+hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  background: #000;
+  &.hr-grey {
+    background: $c-grey;
+  }
+}

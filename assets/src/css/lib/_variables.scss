@@ -1,0 +1,106 @@
+/**
+ * @info
+ * This stylesheet outlines all variables that are used
+ * across the site. The values here are purely representational.
+ * These values should be updated in the initial development phase
+ * when the project begins.
+ */
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-serif: Times, "Times New Roman", serif;
+$font-weight-base: 400;
+
+$font-size-base: 14px;
+$line-height-base: 1.3;
+
+$shell-max-width: 1200px;
+$shell-gutter: 15px;
+
+$responsive-xxs: 480px;
+$responsive-xs: 767px;
+$responsive-sm: 1023px;
+$responsive-md: 1200px;
+
+/* Breakpoints */
+$xxs: 375px;
+$xs: 414px;
+$s: 768px;
+$m: 1023px;
+$md: 1176px;
+$l: 1440px;
+
+/* Colors */
+$c-black: #000;
+$c-white: #fff;
+$c-light-grey: #f6f6f6;
+$c-light-grey-2: #e6e6e5;
+$c-light-grey-3: #e8e8e7;
+$c-grey: #d0d0d0;
+$c-dark-grey: #77777a;
+$c-blue: #012746;
+$c-yellow: #fdd007;
+$c-red: #f16247;
+$c-downriver: #082945;
+$c-lavender-rose: #ff8edd;
+$c-romance: #fffcf9;
+$c-bridal-heath: #fff8f0;
+$c-tidal: #f4fead;
+$c-peach: #ffe8b6;
+$c-account-nav-color: #dbf0e5;
+$c-blue-08: #012746b3;
+$c-light-blue: #e2f2e8;
+$c-dark-yellow: #ffde83;
+$c-light-green: #f7fcbc;
+$c-light-orange: #ffe49a;
+$c-orange: #ffc830;
+$c-pink: #ffb4e6;
+$c-green: #e9f49b;
+$c-jasmine: #ffde83;
+
+$border: solid 1px rgba($c-blue, 1);
+$cart-border: solid 1px rgba($c-black, 1);
+$border-dim: solid 1px rgba($c-black, 0.5);
+
+/* Transitions */
+$duration: 0.25s;
+$speed: 0.2s;
+$ease: ease-in-out;
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$transition-default: var($duration) var($ease);
+
+$header-height-lg: 134px;
+$header-height-sm: 50px;
+
+/* Gutters */
+$gutter-xxs: 20px;
+$gutter-ms: 30px;
+$gutter: 40px;
+
+/* Breakpoint Queries */
+
+$mq-xxs: (min-width: $xxs + 1);
+$mq-xs: (min-width: $xs + 1);
+$mq-ipad: (min-width: $s);
+$mq-s: (min-width: $s + 1);
+$mq-m: (min-width: $m + 1);
+$mq-desktop: (min-width: $m + 2);
+$mq-md: (min-width: $md + 1);
+$mq-l: (min-width: $l + 1);
+
+$mxq-xxs: (max-width: $xxs);
+$mxq-xs: (max-width: $xs);
+$mxq-ipad: (max-width: $s);
+$mxq-s: (max-width: $s);
+$mxq-m: (max-width: $m);
+$mxq-desktop: (max-width: $m);
+$mxq-md: (max-width: $md);
+$mxq-l: (max-width: $l);
+$mq-mobile: (max-width: $s);
+
+/* Header */
+$header-max-width: 520px;
+
+/* Accounts */
+$accouunts-grid-padding: 16px 0;
+$accouunts-grid-padding-big: 80px 0;
+$accouunts-grid-padding-big-second: 60px 0 80px;

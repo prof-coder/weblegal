@@ -1,0 +1,337 @@
+/**
+ * @info
+ * This stylesheet outlines all typography styles
+ * that are used across the entire site. This stylesheet
+ * must be implemented thoughtfully and follow with precision
+ * the style guide that is provided by the designer. No type-related
+ * style declarations should be found in module files. All
+ * type-related style declarations go here.
+ */
+%main {
+  font-family: 'Centra No2', arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/* Global */
+body {
+  @extend %main;
+
+  color: $c-blue;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/**
+ * By design, we attach type styling to DOM elements
+ * through classes rather than DOM Node references. We
+ * do not attach these titles via selectors like "h1 {}"
+ * to ensure that HTML is designed with semantics in mind
+ * and not styling. It is entirely possible that a DOM node
+ * might be styled like so:
+ * <h3 class="h2"></h3>
+ * In this example, the H3 DOM node has been chosen because
+ * it semantically makes sense (i.e. it better represents the
+ * information it contains when non-visual interpreters are
+ * traversing the DOM, such as screen readers). But, class-based
+ * selectors allow for the correct styling to be applied regardless.
+ *
+ * We also include the definition of abstract classes (e.g. %h1) so that
+ * these styles can be used in stylesheets too. For example:
+ * .page-title {
+ *   @extend %h1;
+ * }
+ */
+%h1,
+.h1 {
+  @extend %main;
+
+  @include font-size(40px, 48px);
+
+  letter-spacing: 0;
+
+  @media #{$mq-m} {
+    @include font-size(64px, 72px);
+  }
+}
+
+%h2,
+.h2 {
+  @extend %main;
+
+  @include font-size(32px, 40px);
+
+  @media #{$mq-m} {
+    @include font-size(40px, 48px);
+  }
+}
+
+%h3,
+.h3 {
+  @extend %main;
+
+  @include font-size(28px, 36px);
+
+  @media #{$mq-m} {
+    @include font-size(36px, 44px);
+  }
+}
+
+%h4,
+.h4 {
+  @extend %main;
+
+  @include font-size(20px, 28px);
+
+  @media #{$mq-m} {
+    @include font-size(28px, 36px);
+  }
+}
+
+%s1,
+.s1 {
+  @extend %main;
+
+  @include font-size(28px, 36px);
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+%s2,
+.s2 {
+  @extend %main;
+
+  @include font-size(20px, 28px);
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+%e,
+.e {
+  @extend %main;
+
+  @include font-size(10px, 12px);
+
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+%e2,
+.e2 {
+  @extend %e;
+
+  @include font-size(14px, 12px);
+}
+
+/* Paragraphs */
+%p1,
+.p1 {
+  @extend %main;
+
+  @include font-size(14px, 24px);
+
+  letter-spacing: 0.4px;
+
+  @media #{$mq-m} {
+    @include font-size(16px, 28px);
+  }
+}
+
+%p2,
+.p2 {
+  @extend %main;
+
+  @include font-size(12px, 20px);
+
+  @media #{$mq-m} {
+    @include font-size(14px, 24px);
+  }
+}
+
+/* Label */
+%label,
+.label {
+  @extend %main;
+
+  @include font-size(10px, 12px);
+}
+
+/* Blockquote */
+%bq,
+.bq {
+  @extend %main;
+
+  font-size: 20px;
+  line-height: 1.4;
+
+  @media #{$mq-m} {
+    font-size: 28px;
+  }
+}
+
+/* Links */
+%a1,
+.a1,
+.link {
+  @include font-size(10px, 12px);
+
+  color: $c-lavender-rose;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 0.8px;
+  opacity: 1;
+  padding-bottom: 10px;
+  position: relative;
+
+  &::after {
+    border-bottom: solid 2px $c-lavender-rose;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: $speed width;
+    width: 50%;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+%a2,
+.a2 {
+  text-decoration: underline;
+}
+
+%a3,
+.a3 {
+  @extend %p2;
+
+  display: inline-block;
+  margin-left: -6px;
+  padding: 0 6px;
+  position: relative;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 0;
+  }
+}
+
+.no-touch {
+  %a1,
+  .a1 {
+    transition: opacity $speed $ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  %a2,
+  .a2 {
+    &::after {
+      transition: width $speed $ease;
+    }
+
+    &:hover {
+      &::after {
+        width: calc(100% - 10px);
+      }
+    }
+  }
+
+  %a3,
+  .a3 {
+    &::before {
+      transition: width $speed $ease;
+    }
+
+    &:hover {
+      &::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.link--withicon {
+  align-items: center;
+  display: inline-flex;
+
+  .icon {
+    height: 8px;
+    width: 15px;
+    margin: 0 5px;
+  }
+}
+
+/* Horizontal Rule */
+%hr,
+.hr {
+  background-color: $c-black;
+  border: none;
+  display: block;
+  height: 1px;
+  opacity: 0.2;
+  width: 100%;
+}
+
+/* Styles */
+.italic {
+  font-style: italic;
+}
+
+.light {
+  font-weight: 100;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.decoration--none {
+  text-decoration: none;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.text-center {
+  text-align: center;
+}

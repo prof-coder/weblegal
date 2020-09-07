@@ -1,0 +1,55 @@
+/**
+ * @info
+ * Here, we provide utility classes for styling
+ * a container element that has gutters on either
+ * side of it, and a max-width.
+ *
+ * Example:
+ * <div class="container container--m">
+ *   <!-- anything goes in here -->
+ * </div>
+ */
+.container {
+  margin: 0 auto;
+  position: relative;
+  max-width: $l;
+  width: calc(100% - 30px);
+
+  @media #{$mq-xs} {
+    width: calc(100% - 80px);
+  }
+}
+.container--full-xs {
+  width: 100%;
+
+  @media #{$mq-xs} {
+    width: calc(100% - 80px);
+  }
+}
+
+.container--mobile-no-margin {
+  width: 100%;
+
+  @media #{$mq-ipad} {
+    width: calc(100% - 30px);
+  }
+}
+
+.container--xxs {
+  max-width: $xxs
+}
+.container--xs {
+  max-width: $xs
+}
+.container--s {
+  max-width: $s
+}
+.container--m {
+  max-width: $m
+}
+.container--md {
+  max-width: $md
+}
+.container--l {
+  max-width: $l
+}

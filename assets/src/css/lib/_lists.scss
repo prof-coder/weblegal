@@ -1,0 +1,57 @@
+/**
+ * @info
+ * Here, we outline utility classes that target
+ * list elements. These can be used both in the DOM
+ * directly or, in other style declarations.
+ *
+ * Examples (two different ways of using these):
+ * .custom-module__list {
+ *   @extend %ul;
+ * }
+ *
+ * <ul class="custom-module__list ul">
+ *   <li></li>
+ *   <li></li>
+ * </ul>
+ */
+%ul,
+.ul,
+%ol,
+.ol {
+  @extend %p2;
+
+  padding-left: 24px;
+
+  li {
+    margin-top: 3px;
+    padding-left: 10px;
+    position: relative;
+
+    @media #{$mq-xs} {
+      margin-top: 5px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 3px;
+
+    @media #{$mq-xs} {
+      margin-top: 5px;
+    }
+  }
+}
+
+%ul,
+.ul {
+  list-style-image: url("data:image/svg+xml,%3Csvg fill='none' height='12' viewBox='0 0 12 12' width='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath clip-rule='evenodd' d='m5.99993 0c-3.3137 0-5.99993 2.68637-5.99993 6.00007s2.68623 5.99993 5.99993 5.99993 6.00007-2.68623 6.00007-5.99993-2.68637-6.00007-6.00007-6.00007zm0 9.51576c-1.94175 0-3.51569-1.57408-3.51569-3.51569 0-1.94189 1.57394-3.51583 3.51569-3.51583s3.51569 1.57394 3.51569 3.51583c0 1.94161-1.57394 3.51569-3.51569 3.51569z' fill='%23ff8edd' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+%ol,
+.ol {
+  list-style: decimal;
+}
