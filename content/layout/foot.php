@@ -1,0 +1,1 @@
+<script type="text/javascript" src="<?= $config['base_url'] ?>/assets/js/bundle.js"></script>

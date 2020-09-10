@@ -1,0 +1,25 @@
+.sub-page {
+  width: 33.33%;
+  padding-bottom: 33.33%;
+
+  a {
+    text-align: center;
+  }
+}
+
+.sub-page--inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid $c-romance;
+  background: $c-blue;
+  color: $c-white;
+  font-size: 25px;
+  transition: 0.3s all;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

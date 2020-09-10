@@ -142,7 +142,6 @@ input[disabled] {
 button {
   cursor: pointer; }
 input,
-select,
 button {
   background-color: transparent;
   border: none;
@@ -269,26 +268,6 @@ select::-ms-expand {
  * Example of "path.cdn":
  * https://cdn.shopify.com/s/files/1/0234/4347/2480/t/25/assets/
  */
-@font-face {
-  font-family: 'Centra No2';
-  src: url('{{ "centrano2-book-webfont.woff2" | asset_url }}') format("woff2");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Centra No2';
-  src: url('{{ "centrano2-bookitalic-webfont.woff2" | asset_url }}') format("woff2");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Centra No2';
-  src: url('{{ "centrano2-medium-webfont.woff2" | asset_url }}') format("woff2");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Centra No2';
-  src: url('{{ "centrano2-bold-webfont.woff2" | asset_url }}') format("woff2");
-  font-weight: 900;
-  font-style: normal; }
 /**
  * @info
  * Here, we outline an array of utility
@@ -332,7 +311,7 @@ body,
 .p2,
 .label,
 .bq {
-  font-family: 'Centra No2', arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   line-height: 1.2; }
 /* Global */
@@ -814,7 +793,7 @@ input:-webkit-autofill:active {
     border: 1px solid #012746 !important;
     border-radius: 8px !important;
     color: #012746 !important;
-    font-family: 'Centra No2', arial, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px !important;
     height: 50px !important;
     letter-spacing: 0.25px !important;
@@ -822,7 +801,7 @@ input:-webkit-autofill:active {
     margin-bottom: 22px !important; }
 .custom-klaviyo-form input[type="email"]::-webkit-input-placeholder,
     .custom-klaviyo-form input[type="text"]::-webkit-input-placeholder {
-      font-family: 'Centra No2', arial, sans-serif !important;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 10px !important;
       font-weight: normal !important;
       line-height: 12px !important;
@@ -830,7 +809,7 @@ input:-webkit-autofill:active {
       opacity: 1 !important; }
 .custom-klaviyo-form input[type="email"]::-moz-placeholder,
     .custom-klaviyo-form input[type="text"]::-moz-placeholder {
-      font-family: 'Centra No2', arial, sans-serif !important;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 10px !important;
       font-weight: normal !important;
       line-height: 12px !important;
@@ -838,7 +817,7 @@ input:-webkit-autofill:active {
       opacity: 1 !important; }
 .custom-klaviyo-form input[type="email"]::-ms-input-placeholder,
     .custom-klaviyo-form input[type="text"]::-ms-input-placeholder {
-      font-family: 'Centra No2', arial, sans-serif !important;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 10px !important;
       font-weight: normal !important;
       line-height: 12px !important;
@@ -846,7 +825,7 @@ input:-webkit-autofill:active {
       opacity: 1 !important; }
 .custom-klaviyo-form input[type="email"]::placeholder,
     .custom-klaviyo-form input[type="text"]::placeholder {
-      font-family: 'Centra No2', arial, sans-serif !important;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 10px !important;
       font-weight: normal !important;
       line-height: 12px !important;
@@ -856,7 +835,7 @@ input:-webkit-autofill:active {
     background-color: #012746 !important;
     border-radius: 28px !important;
     display: inline-block !important;
-    font-family: 'Centra No2', arial, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold !important;
     height: 50px !important;
     letter-spacing: 1px !important;
@@ -871,7 +850,7 @@ input:-webkit-autofill:active {
 .custom-klaviyo-form strong,
   .custom-klaviyo-form span:not([role='alert']) {
     color: #fff8f0 !important;
-    font-family: 'Centra No2', arial, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px !important;
     font-weight: normal !important;
     line-height: 1.2 !important; }
@@ -1088,8 +1067,7 @@ hr.hr-grey {
 .main {
   background-color: #fffcf9;
   min-height: calc(100vh - 65px);
-  padding-bottom: 1px;
-  padding-top: 65px; }
+  padding-bottom: 1px; }
 .include-account-nav .main {
   padding-top: 135px; }
 .header,
@@ -1488,7 +1466,7 @@ hr.hr-grey {
 html {
   padding: 0 !important; }
 .okeReviews p {
-  font-family: "Centra No2", arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px !important;
   font-weight: normal !important;
   letter-spacing: 0.4px !important;
@@ -1541,13 +1519,13 @@ html {
 .okeReviews .okeReviews-badge--rating {
   background-color: transparent !important;
   color: #012746 !important;
-  font-family: "Centra No2", arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal !important;
   font-size: 36px !important;
   line-height: 44px !important; }
 .okeReviews .okeReviews-reviewsAggregate-summary-total {
   color: #012746 !important;
-  font-family: "Centra No2", arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold !important;
   font-size: 10px;
   line-height: 12px;
@@ -1561,7 +1539,7 @@ html {
           box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1) !important;
   color: #fff !important;
   display: inline-block !important;
-  font-family: "Centra No2", arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px !important;
   font-weight: bold !important;
   height: 50px !important;
@@ -1609,7 +1587,7 @@ html {
   width: 8px !important; }
 .okeReviews .okeReviews-select-input {
   color: #012746 !important;
-  font-family: "Centra No2", arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal !important;
   font-size: 10px !important;
   line-height: 12px !important;
@@ -1631,7 +1609,7 @@ html {
   padding-left: 0 !important; }
 .okeReviews .okeReviews-review-date {
   color: #012746;
-  font-family: "Centra No2", arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   opacity: 0.68; }
@@ -1650,7 +1628,7 @@ html {
   display: none !important; }
 .okeReviews .okeReviews-review-main-heading {
   color: #012746 !important;
-  font-family: "Centra No2", arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal !important;
   font-size: 20px !important;
   font-weight: 100 !important;
@@ -1663,5 +1641,32 @@ html {
   display: none !important; }
 .okeReviews .okeReviews-review-helpful-vote-button {
   color: #012746 !important; }
+.sub-page {
+  width: 33.33%;
+  padding-bottom: 33.33%; }
+.sub-page a {
+    text-align: center; }
+.sub-page--inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #fffcf9;
+  background: #012746;
+  color: #fff;
+  font-size: 25px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all; }
+.sub-page--inner:hover {
+    opacity: 0.8; }
+.top-links {
+  padding: 24px 0;
+  -webkit-box-shadow: 1px 1px 5px #eee;
+          box-shadow: 1px 1px 5px #eee;
+  margin-bottom: 20px; }
+.top-links a {
+    margin-right: 20px; }
 
 /*# sourceMappingURL={{ "bundle.css.map" | asset_url }} */

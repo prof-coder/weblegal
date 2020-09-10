@@ -59,7 +59,7 @@ const postcssTask = () => {
 };
 
 const watch = () => {
-	gulp.watch([utils.srcStylesPath('**/*.scss')], styleTask);
+	gulp.watch([utils.srcStylesPath('main.scss')], styleTask);
 };
 
 const styleTask = () => {

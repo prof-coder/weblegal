@@ -1,6 +1,5 @@
 <?php
 	
 	/* Variables */
-		$config['host_url'] = "";
-
+		$config['base_url'] = "http://157.245.230.59/weblegal";
 ?>

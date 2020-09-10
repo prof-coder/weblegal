@@ -60,7 +60,7 @@ input:-webkit-autofill:active {
     border: 1px solid $c-blue !important;
     border-radius: 8px !important;
     color: $c-blue !important;
-    font-family: 'Centra No2', arial, sans-serif !important;
+    font-family: $font-family-sans-serif;
     font-size: 10px !important;
     height: 50px !important;
     letter-spacing: 0.25px !important;
@@ -68,7 +68,7 @@ input:-webkit-autofill:active {
     margin-bottom: 22px !important;
 
     &::placeholder {
-      font-family: 'Centra No2', arial, sans-serif !important;
+      font-family: $font-family-sans-serif;
       font-size: 10px !important;
       font-weight: normal !important;
       line-height: 12px !important;
@@ -81,7 +81,7 @@ input:-webkit-autofill:active {
     background-color: $c-blue !important;
     border-radius: 28px !important;
     display: inline-block !important;
-    font-family: 'Centra No2', arial, sans-serif !important;
+    font-family: $font-family-sans-serif;
     font-weight: bold !important;
     height: 50px !important;
     letter-spacing: 1px !important;
@@ -102,7 +102,7 @@ input:-webkit-autofill:active {
   strong,
   span:not([role='alert']) {
     color: $c-bridal-heath !important;
-    font-family: 'Centra No2', arial, sans-serif !important;
+    font-family: $font-family-sans-serif;
     font-size: 14px !important;
     font-weight: normal !important;
     line-height: 1.2 !important;

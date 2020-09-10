@@ -1,6 +1,6 @@
 <?php
-  $base_dir = '';
-  $page_title = "Index Page";
+  $base_dir = '../';
+  $page_title = "Account - Login";
 ?>
 
 <?php
@@ -25,23 +25,7 @@
         </div>
       </div>
       <div class="container bg-white">
-        <div class="sub-pages f">
-          <div class="sub-page relative">
-            <a href="<?= $config['base_url'] ?>/pages/taxation.php" class="sub-page--inner aic jcc f">
-              <span>Taxation</span>
-            </a>
-          </div>
-          <div class="sub-page relative">
-            <a href="<?= $config['base_url'] ?>/pages/appraisals.php" class="sub-page--inner aic jcc f">
-              <span>Appraisals</span>
-            </a>
-          </div>
-          <div class="sub-page relative">
-            <a href="<?= $config['base_url'] ?>/pages/legal.php" class="sub-page--inner aic jcc f">
-              <span>Legal</span>
-            </a>
-          </div>
-        </div>
+        Account - Login Page
       </div>
     </div>
   </div>
